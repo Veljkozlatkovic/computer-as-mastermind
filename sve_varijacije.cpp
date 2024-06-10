@@ -1,4 +1,4 @@
-#include<bits/stdc++.h> // kod uzet sa petlje
+#include<bits/stdc++.h> // kod uzet sa petlje, samo je dodat deo za upisivanje u fajl. koji nisam siguran da radi
 
 using namespace std;
 namespace fs=std::filesystem;
