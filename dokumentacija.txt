@@ -1,4 +1,4 @@
----> ovde zapisujem sve sto sam pokusavao da bih resio zadatak. Da bih video kako mi se kretao proces razmisljanja.
+---> ovde zapisujem sve sto sam pokusavao da bih resio zadatak. Da bih video kako mi se kretao proces razmisljanja. Ne zapisujem veoma često.
 ->Prvo delim zadatak na manje probleme:
     -minimax algoritam/tehnika
     -kako napraviti set sa svim mogucim kombinacijama i kako manipulisati njime
