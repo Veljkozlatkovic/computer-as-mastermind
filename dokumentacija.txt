@@ -1,0 +1,31 @@
+---> ovde zapisujem sve sto sam pokusavao da bih resio zadatak. Da bih video kako mi se kretao proces razmisljanja.
+->Prvo delim zadatak na manje probleme:
+    -minimax algoritam/tehnika
+    -kako napraviti set sa svim mogucim kombinacijama i kako manipulisati njime
+    -resenje za unos(prva ideja je u svesci)
+
+
+ ---> trenutna generalna ideja 3.6.2024:
+        - U posebnom c++ fajlu( radi preglednosti) biće set sa svim mogućim kombinacijama
+        -Cilj računara koji igra je da što više umanji broj tih kombinacija iz seta tako što izbaci svaku
+         kombinaciju koja ne bi odgovarala odgovoru koji zadaje korisnik.
+         Ovo ću pokušati pomoću fislesystem biblioteke.  // u ovu ideju josuvek nisam skroz siguran.
+         Funkcija će se zvati minimax zbog algoritma koji koristi da bi MINIMIZOVAO broj kombinacija
+        - U većini ovakvih igara postoje 2 igrača, min i max igrač. Jedan cilja da minimizuje a drugi da jelte maksimizuje broj mogućnosti za kraj igre
+        - mastermind je malo drugačiji po tome što ima samo jedan igrač koji pogađa, u ovom slučaju računar, koji predstavlja min igrača
+          dok max igrač ne postoji jer bi to bio korisnik.
+
+         - posle svakog poteza od korisnika se traži nov unos na ovom tipu
+            (IDEJA ZA KOD U SVESCI)
+         broj crnih: *unos*
+         broj belih: *unos*
+
+         -terminalno stanje(kraj igre) je kada korisnik unese 4 za broj crnih
+         -napraviti i brojač koji broj koliko poteza je bilo potrebno da bi se pronašla kombinacija
+
+         -Naravno, racunar pocinje uvek sa kombinacijom na tipu XXYY kao i u dokumentu
+          Radi jednostavnosti, to ce uvek biti 1122
+        TODO: googleati can you manipulate a set in a c++ file from a different c++ file
+
+
+-->prva blokada: ispisivanje u brojeva u fajl // razmisli o drugoj metodi

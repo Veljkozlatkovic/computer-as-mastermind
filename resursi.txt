@@ -1,0 +1,27 @@
+stackoverflow:
+https://stackoverflow.com/questions/62430071/donald-knuth-algorithm-mastermind
+
+originalni Knuth-ov dokument:
+https://www.cs.uni.edu/~wallingf/teaching/cs3530/resources/knuth-mastermind.pdf
+
+youtube:
+https://www.youtube.com/watch?v=Okm_t5T1PiA
+
+minimax algoritam:
+https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/
+https://www.youtube.com/watch?v=SLgZhpDsrfc
+
+kako se radi sa setovima:
+https://cplusplus.com/reference/set/set/
+https://www.geeksforgeeks.org/set-in-cpp-stl/
+
+filesystem biblioteka:
+https://en.cppreference.com/w/cpp/filesystem
+https://www.geeksforgeeks.org/file-system-library-in-cpp-17/
+https://en.cppreference.com/w/cpp/filesystem/current_path
+
+https://www.reddit.com/r/cpp_questions/comments/q106fi/how_to_write_numbers_to_text_file_fast_in_c/
+https://cplusplus.com/forum/general/220389/
+
+sve varijacije:
+https://petlja.org/sr-Latn-RS/biblioteka/r/Zbirka2/sve_varijacije
