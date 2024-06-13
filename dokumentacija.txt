@@ -26,4 +26,3 @@
          -Naravno, racunar pocinje uvek sa kombinacijom na tipu XXYY kao i u dokumentu
           Radi jednostavnosti, to ce uvek biti 1122
 
--->prva blokada: ispisivanje u brojeva u fajl // reseno manje-više
