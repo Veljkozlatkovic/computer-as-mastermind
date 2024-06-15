@@ -26,3 +26,14 @@
          -Naravno, racunar pocinje uvek sa kombinacijom na tipu XXYY kao i u dokumentu
           Radi jednostavnosti, to ce uvek biti 1122
 
+---> 15.6.2024
+-odlucio sam da probam python tutor da probam da nadjem problem u kodu
+izaslo mi je ovo
+pointer points to memory that is either unallocated or misaligned with data boundaries. 
+💀 locations are approximate and may not match the pointer's real address. 
+Select 'byte-level view
+
+- ovo samo znaci da sam verovatno zaboravio da alociram memoriju za sve globalne promenljive
+-sto je verovatno razlog zasto kod ne upisuje nista u vector, zato sto vektor ne postoji
+-dok ovo ne resim ne mogu da predjem na glavni algoritam za tok igre
+
