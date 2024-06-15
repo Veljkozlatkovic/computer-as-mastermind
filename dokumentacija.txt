@@ -36,5 +36,5 @@ Select 'byte-level view
 - ovo samo znaci da sam verovatno zaboravio da alociram memoriju za sve globalne promenljive
 -sto je verovatno razlog zasto kod ne upisuje nista u vector, zato sto vektor ne postoji
 -dok ovo ne resim ne mogu da predjem na glavni algoritam za tok igre
--verovatno je trebalo da ih deklarisem u stek/heap/free memory, da ne bi doslo do curenja memorije. moracu da kompletno prodjem kod i da prepravim to.
+-verovatno je trebalo da ih deklarisem u stek/heap/free memory, da ne bi doslo do curenja memorije.
 
