@@ -51,7 +51,7 @@ void ispisivanje()
 int main()
 {
     ispisivanje();
-    for(int i = 0; i < varijacije.size(); i++){ //cisto radi provere da li se upisalo u vektor, za sad nije...
+    for(int i = 0; i < varijacije.size(); i++){ //cisto radi provere da li se upisalo u vektor, za sad nije... // pogledati u "dokumentacija.txt"
         cout << varijacije[i] << '\n';
     }
 }
