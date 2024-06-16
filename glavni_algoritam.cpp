@@ -23,7 +23,7 @@ void ispisivanje(int polja, vector<int>&varijacije, string sve_varijacije,
         while( getline(fajl_varijacije, sve_varijacije) ){ 
 
             stringstream varijacije_stream{sve_varijacije};
-            cout << "..." << endl; // just to check if it even enters the loop
+            cout << "..." << endl; // provera da se vidi da li uopste udje u petlju
 
             while( getline(varijacije_stream, varijacija, ' ')){
 
