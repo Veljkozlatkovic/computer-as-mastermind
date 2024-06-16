@@ -38,3 +38,11 @@ Select 'byte-level view
 -dok ovo ne resim ne mogu da predjem na glavni algoritam za tok igre
 -verovatno je trebalo da ih deklarisem u stek/heap/free memory, da ne bi doslo do curenja memorije.
 
+---> 16.6.2024
+-Sredio sam prethodni problem ali josuvek ne ispisuje nista
+-ispada da je nesto sa getline-om jer stvari iz fajla se ni ne upisuju u string.
+-Nije vezano za getline. Ni na koji nacin nece da se upise u string, kao da ga ni ne cita iako kaze da je uspesno otvoren.
+-Postoji mogucnost da je prosto ta jedna linija u fajlu bila predugacka za citanje i upis u string.
+-sad sam ubacio sve u set_tmp.txt gde posle svake varijacije ide nov red
+-Zakljucio sam da to ne radi nista.
+
