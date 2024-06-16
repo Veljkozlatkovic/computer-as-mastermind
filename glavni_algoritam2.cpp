@@ -1,4 +1,4 @@
-include<iostream>
+include<iostream> //ovo je sa citanjem set_tmp.txt gde je posle svake varijacije \n
 #include<filesystem>
 #include<vector>
 #include<fstream> 
