@@ -1,4 +1,4 @@
-include<iostream> //ovo je sa citanjem set_tmp.txt gde je posle svake varijacije \n
+#include<iostream>
 #include<filesystem>
 #include<vector>
 #include<fstream> 
@@ -7,51 +7,53 @@ include<iostream> //ovo je sa citanjem set_tmp.txt gde je posle svake varijacije
 
 using namespace std;
 
-void ispisivanje(int polja, vector<int>&varijacije, string sve_varijacije,
-                 string varijacija, ifstream& fajl_varijacije) 
-{  
-     fajl_varijacije.open("set_tmp.txt", ifstream::in);
+void upis_u_niz(ifstream& fajl_varijacije,int niz[2000]){
+    int i = 1;
+    fajl_varijacije.open("set_tmp.txt");   
 
     if(fajl_varijacije.is_open()) { 
-    cout << "success" << endl;
 
-    fajl_varijacije >> sve_varijacije;// cisto radi testa da se vidi radi li
-    cout << sve_varijacije << endl;   // iz nekog razloga nece ni ovo ni getline
-    getline(fajl_varijacije,sve_varijacije);
-    cout << sve_varijacije << endl;
-   
-        while( getline(fajl_varijacije, sve_varijacije) ){ 
-
-            stringstream varijacije_stream{sve_varijacije};
-            cout << "..." << endl; // provera da se vidi da li uopste udje u petlju
-
-            while( getline(varijacije_stream, varijacija, ' ')){
-
-                if (varijacija.size() == polja) {// osigura da se u vektor uvek upise tacan broj znakova
-                int varijacija_int = stoi(varijacija);
-                varijacije.push_back(varijacija_int);
-                }
-            }
+    //cout << "success" << endl; // provera da je uspesno otvoren fajl
+        while (!fajl_varijacije.eof()){
+        fajl_varijacije >> niz[i];
+        // cout << "ovo je redni broj varijacije i varijacija: " << i << ' ' <<  niz[i] <<'\n'; znam da uspesno upisuje u niz
+        if(i==1296) break; // da ne bi ispisao 1297 elemenata
+        i=i+1;
         }
     }
     else cout << "error: could not open file" << endl;
 
         fajl_varijacije.close();
-    } 
+}
 
-
-
-int main()
-{
-    const int znak = 6, polja = 4; /// znak(kao u slagalici), i broj polja koja se unose
-    vector<int> varijacije;
-    string sve_varijacije; // string u koji ubacimo sve iz txt fajla
-    string varijacija; // ovde se izdvajaju posebne varijacije
-    std::ifstream fajl_varijacije("set.txt"); 
-
-    ispisivanje(polja, varijacije, sve_varijacije, varijacija, fajl_varijacije);
-
-    for(int i = 0; i < varijacije.size(); i++){ 
-        cout << varijacije[i] << '\n';
+void niz_u_vector(int niz[2000], vector<int> &varijacije){
+    for(int i = 0; i < 2000; i++){
+        varijacije.push_back(niz[i]);
+        //cout << "vektor: " << varijacije[i] << endl;
+        if(i == 1296) break;   
     }
+}
+
+void tok_igre(){
+ 
+}
+
+int main(){
+    const int znak = 6, polja = 4;
+    int varijacije_niz[2000];
+    vector<int> varijacije_v;
+    ifstream fajl;
+
+    upis_u_niz(fajl,varijacije_niz);
+    niz_u_vector(varijacije_niz, varijacije_v);
+
+
+
+    //ovo dole su samo provere da se vidi upisano li je sve kako treba
+    //cout << size(varijacije_niz) << endl;
+   /* for(int i = 0; i < varijacije_v.size(); i++){
+        cout << i << ' ' <<varijacije_v[i] << endl;
+    }*/
+
+    return 0;
 }
